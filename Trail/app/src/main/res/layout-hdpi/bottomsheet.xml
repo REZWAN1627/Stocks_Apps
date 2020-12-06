@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/sheetbackground"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wallet"
+        android:textStyle="bold"
+        android:textColor="#FFFF"
+        android:textSize="@dimen/_12ssp"
+        android:padding="@dimen/_13sdp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_4sdp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/roundstrock"
+            android:drawableStart="@drawable/money_24"
+            android:drawableLeft="@drawable/money_24"
+            android:padding="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.044"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.461" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.10"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heisenberg wallet"
+                android:textColor="#858CA3"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 9,6139"
+                android:textColor="#FFFF"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/click"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.615">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/atm_24"
+                    android:padding="@dimen/_5sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="8612"
+                    android:textColor="#1F3890"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+    
+    <TextView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="1dp"
+        android:background="#33436A"/>
+    <TextView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="1dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/roundstrock"
+            android:drawableStart="@drawable/euro_24"
+            android:drawableLeft="@drawable/euro_24"
+            android:padding="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.044"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.461" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.111"
+            app:layout_constraintStart_toEndOf="@+id/textView41"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Great Wall wallet"
+                android:textColor="#858CA3"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="€ 6,211,1"
+                android:textColor="#FFFF"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout21"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.615">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/atm_24"
+                    android:padding="@dimen/_5sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="4431"
+                    android:textColor="#1F3890"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="1dp"/>
+    <TextView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="1dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_gravity="center"
+
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/textView411"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/moneyin_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.044"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.461" />
+
+        <TextView
+            android:id="@+id/linearLayout211"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shopping_bag_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.381"
+            app:layout_constraintStart_toEndOf="@+id/textView411"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.461">
+
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/people_24"
+            android:backgroundTint="#98ABC0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout211"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+

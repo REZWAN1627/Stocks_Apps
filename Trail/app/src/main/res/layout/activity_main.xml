@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:padding="@dimen/_10sdp"
+               android:id="@+id/textView"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Stocks status"
+               android:textColor="#0C1947"
+               android:textSize="@dimen/_15ssp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/navigate_next_24"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"/>
+
+
+       </RelativeLayout>
+
+       <LinearLayout
+           android:id="@+id/linearLayout"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_250sdp"
+           android:orientation="horizontal">
+
+           <com.github.mikephil.charting.charts.PieChart
+               android:id="@+id/chart"
+               android:layout_width="@dimen/_170sdp"
+               android:layout_height="match_parent" />
+
+           <ScrollView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="@dimen/_10sdp">
+
+               <LinearLayout
+                   android:id="@+id/custom_layout"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical" />
+
+           </ScrollView>
+
+       </LinearLayout>
+
+       <TextView
+           android:padding="@dimen/_10sdp"
+           android:id="@+id/textView2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Trends"
+           android:textColor="#0C1947"
+           android:textSize="@dimen/_15ssp"
+           android:textStyle="bold" />
+
+
+       <com.github.mikephil.charting.charts.BarChart
+           android:id="@+id/barcharts"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_175sdp" />
+
+   </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/design_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:behavior_peekHeight="@dimen/_40sdp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+
+        <include layout="@layout/bottomsheet"/>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
